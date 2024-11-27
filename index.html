@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leetx</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Candal&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cal-heatmap"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  <script type="module" crossorigin src="/assets/index-9lL8eBtN.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-diVj8zf2.css">
+</head>
+<body>
+    <div class="main relative bg-[#DEDEDE] p-[1rem] px-[4rem] pb-[0] flex flex-col items-start justify-center gap-[4vh]">
+      <header class="h-[2.4rem] w-[100%] bg-[#DEDEDE] flex justify-between items-center">
+        <div class="right h-[2.4rem] w-[28.3rem] bg-gray-500 flex gap-[0.1rem] items-center">
+          <div class="h-[100%] w-[8.2rem] bg-[#DEDEDE] flex items-center gap-1">
+            <img src="/assets/coding-Cf-2YNhZ.png" alt="" class="h-[2rem] w-[2rem] bg-[#DEDEDE]">
+            <div class="websitename h-[2.4rem] w-[5.4rem] bg-[#DEDEDE] flex justify-start transform scale-y-[0.83] items-center"><span id="websitename">leetx</span></div>
+          </div>
+          <div class="h-[100%] w-[20rem] bg-[#DEDEDE] px-[1rem] flex items-center">
+            <div class="h-[2.4rem] w-[100%] pl-[2rem] bg-[#DEDEDE] flex items-center gap-10 " >
+              <span id="solcom" class="h-[100%] text-[1rem] flex items-center">solutions</span>
+              <span id="solcom" class="h-[100%] text-[1rem] flex items-center">company</span>
+            </div>
+          </div>
+        </div>
+        <div class="left h-[100%] w-[20rem] bg-[#DEDEDE] flex items-center justify-end">
+          <button class="feedback h-[85%] rounded-lg w-[6rem] text-[0.9rem] px-[0.5rem] bg-black text-white">feedback</button>
+        </div>
+      </header>
+
+      <div class="bg-[#DEDEDE] h-[80%] w-[100%] flex flex-row justify-center items-center  gap-1 p-[0.1rem] mt-[1rem]">
+        <div class="h-[100%] w-[55%] bg-[#DEDEDE] flex flex-col justify-around items-start">
+          <div class="h-[1.3rem] w-[100%] bg-[#DEDEDE]">
+            <div class="future-info shadow-box h-[100%] w-[18rem] bg-white rounded-2xl px-[0.8rem] flex items-center"><span class="max-w-[30rem]">more features coming soon—stay tuned!</span></div>
+          </div>
+          <div class="main-text h-[10rem] w-[100%] bg-[#DEDEDE] text-[3.7rem] transform scale-y-[0.80] flex items-center"><span>unlock leetcode<br>insights with leetx</span></div>
+          <div class="h-[4rem] w-[100%] bg-[#DEDEDE] flex items-start justify-start">
+            <span id="content">visualize leetcode progress with AI insights, unlocking personalized stats and boosting your coding journey.</span>
+          </div>
+          <div class="h-[3rem] w-[100%] bg-[#DEDEDE] flex gap-[0.8rem] items-center">
+            <input id="username" placeholder="Username" type="text" class="h-[2rem] rounded-lg w-[16rem] px-[0.6rem] bg-[#DEDEDE]">
+            <button id="button" class="search h-[2rem] rounded-lg w-[6rem] text-[0.9rem] px-[0.5rem] bg-black text-white">search</button>
+          </div>
+          <div class="user h-[17rem] w-[100%] bg-[#DEDEDE] flex justify-start items-center gap-3">
+            <div class="box1 h-[10rem] w-[10rem] bg-transparent bg-opacity-10 backdrop-blur-xl rounded-tl-lg rounded-br-2xl  flex flex-col justify-around">
+              <video src="/assets/box1video-Bv-RzhHE.mp4" autoplay muted loop class="h-[100%] w-[100%] object-cover rounded-tl-lg rounded-br-2xl opacity-50 " loading="lazy"></video>
+            </div>
+            <div class="box2 h-[10rem] w-[10rem] bg-[url('./img.vid/premiumcard.png')] pb-[0.2rem] bg-opacity-10 bg-cover rounded-tr-lg rounded-bl-2xl flex flex-col justify-between items-center">
+            <div class="h-[2rem] w-[100%] flex justify-center items-center gap-2"> 
+              <span id="premium-leetx" class="premium-leetx transform scale-y-[0.84]">leetx</span>
+              <span id="pro" class="pro bg-[#9abddc] px-[0.3rem] text-center rounded-lg transform scale-y-[0.85]">Pro</span> 
+            </div>  
+            <div class="h-[4rem] w-[100%] flex flex-col justify-between items-start pl-[0.3rem]">
+              <span id="premium-features" class="">|  Pro Analytics</span>
+              <span id="premium-features" class="">|  AI Suggestions</span>
+              <span id="premium-features" class="">|  Ad-Free Experience</span>
+            </div>
+            <button class="h-[1.7rem] rounded-lg w-[65%] bg-[#A7e8A7] flex justify-center items-center">
+              <span id="premium-price" class="premium-price">$11/month</span>
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="canvas h-[100%] w-[45%] bg-[#e0e0e0] rounded-2xl rounded-tr-2xl overflow-hidden ">
+          <canvas id="canvas" class=" w-[100%]"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative overflow-hidden main2 bg-[#DEDEDE] h-[33rem] w-m-[100vw] mx-auto p-[2rem] flex justify-center mt-[3rem] items-center gap-2">
+      <div class="a h-[19rem] w-[20rem] bg-[#d1d1d1] border border-[#DEDEDE] border-[0.19rem] rounded-xl flex flex-col p-[0.6rem] justify-between items-start">
+        <div class="h-[5rem] w-[100%] p-[0.2rem] px-[0.4rem] flex items-center gap-2">
+          <img id="profilepic" src="/assets/coding-Cf-2YNhZ.png" alt="avtar" class="h-[3rem] bg-[#DEDEDE] rounded-3xl w-[3rem] object-cover">
+          <span id="name" class="text-[1.3rem] font-bold user"></span>
+        </div>
+        <div class="h-[5rem] w-[100%] p-[0.2rem] px-[0.5rem] flex items-start justify-center gap-2 flex-col">
+          <span  class="user text-[1.2rem] font-bold h-[1.2rem]">Total questions solved</span>
+          <span id="totalquestionsolved" class="user text-[1.2rem] font-bold h-[2rem]"></span>
+        </div>
+        <div class="h-[5rem] w-[100%] p-[0.2rem] px-[0.5rem] flex items-start justify-center gap-2 flex-col">
+          <span class="user text-[1.2rem] font-bold h-[1.2rem]">Ranking</span>
+          <span id="ranking" class="user text-[1.2rem] font-bold h-[2rem]"></span>
+        </div>
+      </div>
+      <div id="leetcode-heatmap" class="b h-[17rem] w-[50rem] bg-[#d1d1d1] border border-[#DEDEDE] border-[0.3rem] rounded-xl"></div>
+    </div>
+
+    <!-- 3rd item -->   
+    <div class="overflow-hidden relative h-[111 rem] bg-[#DEDEDE]">
+      <div class="h-[17rem] w-screen bg-[#DEDEDE] flex justify-center items-center mt-[4rem]">
+        <div class="h-[17rem] w-[60rem] bg-[#DEDEDE] flex justify-start items-center pl-[6rem]">
+        <span class="tagline text-[5rem]">Designed to <br> transform your <br>progress into insights.</span>
+        </div>
+      </div>
+
+      <div class="cards relative h-[47rem] p-[1.6rem] px-[8rem] gap-3 flex flex-col justify-start items-center ">
+        <div id="as" class="sticky h-[25rem] rounded-3xl w-[100%] top-[1rem] bg-[#1D2434] overflow-hidden  flex flex-col gap-2 justify-center items-center px-[2rem]">
+          <video id="cardvid1" loop autoplay muted src="/assets/cardvid1-k-f2pLAq.mp4" class="absolute top-[0] left-[0] z-[-1] card1 h-[100%] w-[100%] object-cover rounded3xl" loading="lazy"></video>
+              <span id="last-submission" class="x h-[3rem] px-[2rem] bg-transparent backdrop-blur-sm rounded-2xl bg-white/10 flex justify-center items-center bg-red-500">Last Five Accepted Submission</span>
+              <table id="last-submission-table" class="w-[100%] bg-transparent backdrop-blur-sm rounded-2xl  bg-[#DEDEDE]/10 flex flex-col gap-6">
+                <tr class="w-[100%] h-[2rem]">
+                  <th class="w-[2rem] text-left px-2">#</th>
+                  <th class="w-[40%] text-left px-2">Title</th>
+                  <th class="w-[12%] text-left px-2">Status</th>
+                  <th class="w-[12%] text-left px-2">Date</th>
+                  <th class="w-[12%] text-left px-2">Time</th>
+                  <th class="w-[12%] text-left px-2">Language</th>
+                </tr>
+                <tr class="w-[100%] h-[2rem]">
+                  <td id="serial1" class="px-2"></td>
+                  <td id="title1" class="px-2 "></td>
+                  <td id="status1" class="px-2 text-green-600"></td>
+                  <td id="date1" class="px-2"></td>
+                  <td id="time1" class="px-2 text-[#924dbf]"></td>
+                  <td id="language1" class="px-2"></td>
+                </tr>
+                <tr class="w-[100%] h-[2rem]">
+                  <td id="serial2" class="px-2"></td>
+                  <td id="title2" class="px-2"></td>
+                  <td id="status2" class="px-2 text-green-600"></td>
+                  <td id="date2" class="px-2"></td>
+                  <td id="time2" class="px-2 text-[#924dbf]"></td>
+                  <td id="language2" class="px-2"></td>
+                </tr>
+                <tr class="w-[100%] h-[2rem]">
+                  <td id="serial3" class="px-2"></td>
+                  <td id="title3" class="px-2"></td>
+                  <td id="status3" class="px-2 text-green-600"></td>
+                  <td id="date3" class="px-2"></td>
+                  <td id="time3" class="px-2 text-[#924dbf] "></td>
+                  <td id="language3" class="px-2"></td>
+                </tr>
+                <tr class="w-[100%] h-[2rem]">
+                  <td id="serial4" class="px-2"></td>
+                  <td id="title4" class="px-2"></td>
+                  <td id="status4" class="px-2 text-green-600"></td>
+                  <td id="date4" class="px-2"></td>
+                  <td id="time4" class="px-2 text-[#924dbf]"></td>
+                  <td id="language4" class="px-2"></td>
+                </tr>
+                <tr class="w-[100%] h-[2rem]">
+                  <td id="serial5" class="px-2"></td>
+                  <td id="title5" class="px-2"></td>
+                  <td id="status5" class="px-2 text-green-600"></td>
+                  <td id="date5" class="px-2"></td>
+                  <td id="time5" class="px-2 text-[#924dbf]"></td>
+                  <td id="language5" class="px-2"></td>
+                </tr>
+              </table>
+        </div>
+        <div id="ah" class="absolute overflow-hidden flex rounded-3xl top-[29.2rem] h-[27rem] w-[79%] my- [1.6rem] bg-white">
+          <div class="left-col h-[100%] w-[50%] p-[2rem] flex flex-col justify-center gap-3 items-start">
+            <span class="badges w-[100%]">Badges :  <span id="badge-count" class="text-[1.3rem] text-[#c85a01]"></span></span>
+            <div class="badges-container h-[10rem] flex p-[0.5rem] justify-around items-center gap-4 w-[100%]">
+              <div class="badge1 flex flex-col justify-center items-center gap-1 ">
+                <img id="b1-img" src="/assets/cancel-T7EEwoVT.png" alt="Badge 1" class="h-[3.4rem] w-[3.4rem] object-cover ">
+                <span id="b1-name" class="text-center"></span>
+                <span id="b1-date"></span>
+              </div>
+              <div class="badge2 flex flex-col justify-center items-center gap-1 ">
+                <img id="b2-img" src="/assets/cancel-T7EEwoVT.png" alt="Badge 2" class="h-[3.4rem] w-[3.4rem] object-cover ">
+                <span id="b2-name" class="text-center"></span>  
+                <span id="b2-date"></span>
+              </div>
+              <div class="badge3 flex flex-col justify-center items-center gap-1 ">
+                <img id="b3-img" src="/assets/cancel-T7EEwoVT.png" alt="Badge 3" class="h-[3.4rem] w-[3.4rem] object-cover ">
+                <span id="b3-name" class="text-center"></span>
+                <span id="b3-date"></span>
+              </div>
+            </div>
+          </div>
+          <div class="right-col h-[100%] w-[50%]"><video id="cardvid1" src="/assets/cardvid2-D1nMAjRs.mp4" autoplay loop muted class="card1 h-[100%] w-[100%] object-cover" loading="lazy"></video></div>
+        </div>        
+      </div>
+      <div class="relative overflow-hidden h-[120vh] bg-[#DEDEDE] bg-opacity-0 overflow-hidden flex justify-center items-center">
+        <div class="name-animation absolute flex justify-center items-center h-[8rem] w-[40rem] top-1/3 left-1/2 transform -translate-x-1/2 bg-[#DEDEDE]">
+          <span class="scale-text text-[4rem]">leetx Analytics Studio</span>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="overflow-hidden dark-subpart h-[60vh] w-m-[1240px] mx-auto bg-black p-[2rem] flex flex-col justify-center items-center p-[2rem]">
+      <div class="1st-part h-[30rem] w-[100%] bg-black overflow-hidden flex justify-between items-center gap-3 ">
+        <div class="revolutionary-text content h-[100%] w-[50%] pl-[2rem] flex flex-col justify-center items-center">
+          <span id="revolutionary-text1" class=" h-[4rem] w-[100%] bg-black text-[2rem]">leetx Analytics Studio</span>
+          <span id="revolutionary-text2" class="h-[6rem] w-[100%] bg-black text-[2.44rem]">Revolutionary analytics,
+          interactive coding insights,</span>
+          <span id="revolutionary-text3" class="h-[6rem] w-[100%] bg-black text-[2.44rem]">to elevate skills and empower
+            problem-solving.</span>
+        </div>
+        <div class=" relative motion-animation bg-black flex justify-center items-center h-[100%] w-[50%] overflow-hidden z-[99]"><video autoplay loop muted src="/assets/motion-animation-DlAaivsm.mp4" class="h-[100%]" loading="lazy"></video></div>
+      </div>
+    </div>
+
+    <div class="w-[100vw] mx-auto bg-[#040313] p-[2rem] px-[6rem] flex flex-col gap-[1rem] justify-center items-center">
+      <div class="grid-container h-[40rem] grid gap-2">
+        <div class="rounded-2xl col-span-2 relative bg-[#0d111d] border border-gray-800 border-[0.01rem] flex justify-between px-[1.2rem] items-center">
+          <div class="relative h-[100%] w-[50%] flex justify-center items-center ">
+            <div class="outer bg-[#0d111d] relative h-[12.3rem] w-[12.3rem] rounded-[50%] flex justify-center items-center p-[0.1rem]">
+              <div class="inner bg-[#0d111d] h-[80%] w-[80%] rounded-[50%] flex flex-col justify-center items-center">
+                <span class="text-[#1cbaba]">Easy</span>
+                <span id="easynum" class="text-[#1cbaba]"></span>
+              </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%">
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle cx="100%" cy="100%" r="5.25rem" stroke-linecap="round" class="circle-easy top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            </svg>
+          </div>
+          <div class="relative h-[100%] w-[50%] flex justify-center items-center ">
+            <div class="outer bg-[#0d111d] relative h-[12.3rem] w-[12.3rem] rounded-[50%] flex justify-center items-center p-[0.1rem]">
+              <div class="inner bg-[#0d111d] h-[80%] w-[80%] rounded-[50%] flex flex-col justify-center items-center">
+                <span class="text-[#ffb700]">Medium</span>
+                <span id="mediumnum" class="text-[#ffb700]"></span>
+              </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%">
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle cx="100%" cy="100%" r="5.25rem" stroke-linecap="round" class="circle-medium top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            </svg>
+          </div>
+        </div>
+        <div class="rounded-2xl relative bg-[#0d111d] border border-gray-800 border-[0.01rem] flex justify-center items-center">
+          <div class="outer bg-[#0d111d] relative h-[12.3rem] w-[12.3rem] rounded-[50%] flex justify-center items-center p-[0.1rem]">
+            <div class="inner bg-[#0d111d] h-[80%] w-[80%] rounded-[50%] flex flex-col justify-center items-center">
+              <span class="text-[#f63737]">Hard</span>
+              <span id="hardnum" class="text-[#f63737]"></span>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%">
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e91e63" />
+                <stop offset="100%" stop-color="#673ab7" />
+              </linearGradient>
+            </defs>
+            <circle cx="100%" cy="100%" r="5.25rem" stroke-linecap="round" class="circle-hard top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+          </svg>
+        </div>
+        <div class="contest rounded-2xl bg-[#0d111d] border border-gray-800 border-[0.01rem] flex flex-col justify-around items-start p-[2rem]">
+          <div class="h-[2.2rem] w-[100%] flex justify-start items-center gap-2">
+            <span class="text-[1.4rem]">Contest Details</span>
+          </div>
+          <div class="h-[2.2rem] w-[100%] flex justify-between items-center gap-2">
+            <span class="flex justify-start items-center">Attended contest</span>
+            <span id="attendedcontest"></span>
+          </div>
+          <div class="h-[2.2rem] w-[100%] flex justify-between items-center gap-2">
+            <span class="flex justify-start items-center">Global Ranking</span>
+            <span id="globalranking"></span>
+          </div>
+          <div class="h-[2.2rem] w-[100%] flex justify-between items-center gap-2">
+            <span class="flex justify-start items-center">Top</span>
+            <span id="top"></span>
+          </div>
+          <div class="h-[2.2rem] w-[100%] flex justify-between items-center gap-2">
+            <span class="flex justify-start items-center">Rating</span>
+            <span id="rating"></span>
+          </div>
+        </div>
+        <div class="rounded-2xl col-span-2 bg-[#0d111d] border border-gray-800 border-[0.01rem] flex justify-center items-center p-[2rem]">
+          <span class="text-[2rem] quote">" From ambition to achievement <br> track your path to <span id="excellence">excellence."</span></span>
+        </div>
+      </div>
+
+      <div class="h-[100vh] w-[100vw] bg-[#040313] px-[4rem] py-[2rem] flex justify-center items-center">
+        <div class="h-[100%] bg-[#040313] flex justify-start items-center gap-[1rem]">
+          <span class="for-text text-[4rem] px-[1rem] bg-[#040313] ">FOR</span>
+          <div class="list-container h-[20rem] w-[70vw] bg-[#040313] flex flex-col gap-[2rem] justify-center items-start pl-[2rem] ">
+            <ul class="scrolling-list flex flex-col list-one">
+              <li><span class="text-[#2c738b]">clear insights</span></li>
+              <li><span class="text-white">performance tracking</span></li>
+              <li><span class="text-[#e85030]">your progress</span></li>
+              <li><span class="text-[#34a36c]">smarter strategies</span></li>
+            </ul>
+            <ul class="scrolling-list flex flex-col list-two">
+              <li><span class="text-[#2c738b]">clear insights</span></li>
+              <li><span class="text-white">performance tracking</span></li>
+              <li><span class="text-[#e85030]">your progress</span></li>
+              <li><span class="text-[#34a36c]">smarter strategies</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[100vh] w-[100vw] bg-[#040313] flex flex-col justify-center items-center">
+        <div class="chart-text text-[2.3rem] transform scale-y-[0.92]">DSA TOPICS ANALYSIS</div>
+        <canvas id="charts" class="w-[90%] h-[90%] p-[2rem] rounded-md rounded-tl-3xl rounded-br-3xl border border-gray-800 border-[0.01rem]"></canvas>
+      </div>
+    </div>
+
+    <footer class="h-[30rem] w-[100vw] bg-[#040313] flex justify-center items-center">
+      <div class="footer-box h-[80%] w-[90%] bg-[#040313] border border-gray-800 border-[0.01rem] rounded-3xl flex flex-col justify-center items-center p-[1.3rem] gap-[0.5rem]">
+        <div class="upper h-[85%] w-[100%] bg-[#040313] flex justify-center items-center gap-[2rem]">
+          <div class="h-[100%] w-[20%] bg-[#040313] flex flex-col justify-start items-start gap-[0.1rem]">
+            <span class="footer-leetx text-[2.3rem] transform scale-y-[0.824]">leetx</span>
+            <button class="footer-feedback h-[1.8rem] rounded-xl w-[5rem] text-[0.9rem] px-[0.5rem] bg-white text-black">feedback</button>
+          </div>
+          <div class="footer-main h-[100%] w-[80%] bg-[#040313]">
+            <table class="w-[100%] h-[50%]">
+              <tr>
+                <th class="text-white text-left">Company</th>
+                <th class="text-white text-left">Services</th>
+                <th class="text-white text-left">Product</th>
+                <th class="text-white text-left">Address</th>
+              </tr>
+              <tr>
+                <td><a href="#" class="text-gray-400">About</a></td>
+                <td><a href="#" class="text-gray-400">Institutional</a></td>
+                <td><a href="#" class="text-gray-400">Studio</a></td>
+                <td class="text-gray-400">123 Tech Street</td>
+              </tr>
+              <tr>
+                <td><a href="#" class="text-gray-400">News & Content</a></td>
+                <td><a href="#" class="text-gray-400">LeetCode Analytics</a></td>
+                <td></td>
+                <td class="text-gray-400">Silicon Valley</td>
+              </tr>
+              <tr>
+                <td><a href="#" class="text-gray-400">Careers</a></td>
+                <td><a href="#" class="text-gray-400">insights & Reports</a></td>
+                <td></td>
+                <td class="text-gray-400">CA 94025, USA</td>
+              </tr>
+              <tr>
+                <td><a href="#" class="text-gray-400">Contact</a></td>
+                <td></td>
+                <td></td>
+                <td class="text-gray-400">Building 42, Floor 3</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="lower h-[15%] w-[100%] bg-[#040313] flex justify-center items-center gap-[2rem]">
+          <div class="lower-left h-[100%] w-[20%] bg-[#040313] flex justify-start items-center gap-[1rem]">
+            <div class="img1 w-[2rem] h-[2rem] bg-gray-500 rounded-full overflow-hidden"><img src="/assets/github-DkTr3Tul.png" alt="github" class="w-[100%] h-[100%]"></div>
+            <div class="img2 w-[2rem] h-[2rem] bg-gray-500 rounded-full overflow-hidden"><img src="/assets/instagram-BX9dOc1F.png" alt="instagram" class="w-[100%] h-[100%]"></div>
+            <div class="img3 w-[2rem] h-[2rem] bg-gray-500 rounded-full overflow-hidden"><img src="/assets/linkedin-BePj2NMB.png" alt="linkedin" class="w-[100%] h-[100%]"></div>
+            <div class="img4 w-[2rem] h-[2rem] bg-gray-500 rounded-full overflow-hidden"><img src="/assets/youtube-BEGLe2Sw.png" alt="youtube" class="w-[100%] h-[100%]"></div>
+          </div>
+          <div class="lower-right h-[100%] w-[80%] bg-[#040313] flex justify-start items-center gap-[2rem]">
+            <a href="#" class="text-gray-400">Privacy Policy</a>
+            <a href="#" class="text-gray-400">Terms of Service</a>
+            <a href="#" class="text-gray-400">Cookie Policy</a>
+            <a href="#" class="text-gray-400">Copyright Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+
+</body>
+</html> 
