@@ -3,59 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>leetx</title>
+  <link rel="icon" href="/leetx/assets/coding-Cf-2YNhZ.png" type="image/x-icon">
+  <title>Leetx - Track Your LeetCode Coding Journey</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Candal&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/cal-heatmap"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <meta name="description" content="Leetx helps you analyze and visualize your LeetCode progress with interactive statistics and insights.">
+
+  <!-- Open Graph for social media (optional) -->
+  <meta property="og:title" content="Leetx - LeetCode Progress Tracker">
+  <meta property="og:description" content="Track your LeetCode coding journey with Leetx. View detailed insights into your progress and statistics.">
+  <meta property="og:image" content="/leetx/assets/coding-Cf-2YNhZ.png">
+
+<!-- CSS Stylesheets -->
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- GSAP (for animations) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+
+<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-
-  <script type="module" crossorigin src="/leetx/assets/index-BqjIoavv.js"></script>
-  <link rel="stylesheet" crossorigin href="/leetx/assets/index-Dzq8c5rz.css">
+  <script type="module" crossorigin src="/leetx/assets/index-Cxg1J7Gq.js"></script>
+  <link rel="stylesheet" crossorigin href="/leetx/assets/index-M9oEl-2n.css">
 </head>
 <body>
-    <div class="main relative bg-[#DEDEDE] p-[1rem] px-[4rem] pb-[0] flex flex-col items-start justify-center gap-[4vh]">
-      <header class="h-[2.4rem] w-[100%] bg-[#DEDEDE] flex justify-between items-center">
+  <!-- first block  -->
+    <div class="main relative bg-[#eaf2ff] p-[1rem] px-[4rem] pb-[0] flex flex-col items-start justify-center gap-[4vh]">
+      <header class="h-[2.4rem] w-[100%] bg-[#eaf2ff] flex justify-between items-center">
         <div class="right h-[2.4rem] w-[28.3rem] bg-gray-500 flex gap-[0.1rem] items-center">
-          <div class="h-[100%] w-[8.2rem] bg-[#DEDEDE] flex items-center gap-1">
-            <img src="/leetx/assets/coding-Cf-2YNhZ.png" alt="" class="h-[2rem] w-[2rem] bg-[#DEDEDE]">
-            <div class="websitename h-[2.4rem] w-[5.4rem] bg-[#DEDEDE] flex justify-start transform scale-y-[0.83] items-center"><span id="websitename">leetx</span></div>
+          <div class="h-[100%] w-[8.2rem] bg-[#eaf2ff] flex items-center gap-1">
+            <img src="/leetx/assets/coding-Cf-2YNhZ.png" alt="" class="h-[2rem] w-[2rem] bg-[#eaf2ff]">
+            <div class="websitename h-[2.4rem] w-[5.4rem] bg-[#eaf2ff] flex justify-start transform scale-y-[0.83] items-center"><span id="websitename">leetx</span></div>
           </div>
-          <div class="h-[100%] w-[20rem] bg-[#DEDEDE] px-[1rem] flex items-center">
-            <div class="h-[2.4rem] w-[100%] pl-[2rem] bg-[#DEDEDE] flex items-center gap-10 " >
+          <div class="h-[100%] w-[20rem] bg-[#eaf2ff] px-[1rem] flex items-center">
+            <div class="h-[2.4rem] w-[100%] pl-[2rem] bg-[#eaf2ff] flex items-center gap-10 " >
               <span id="solcom" class="h-[100%] text-[1rem] flex items-center">solutions</span>
               <span id="solcom" class="h-[100%] text-[1rem] flex items-center">company</span>
             </div>
           </div>
         </div>
-        <div class="left h-[100%] w-[20rem] bg-[#DEDEDE] flex items-center justify-end">
-          <button class="feedback h-[85%] rounded-lg w-[6rem] text-[0.9rem] px-[0.5rem] bg-black text-white">feedback</button>
+        <div class="left h-[100%] w-[20rem] bg-[#eaf2ff] flex items-center justify-end">
+          <button class="feedback h-[85%] rounded-lg w-[6rem] text-[0.9rem] px-[0.5rem] bg-black text-[#eaf2ff]">feedback</button>
         </div>
       </header>
 
-      <div class="bg-[#DEDEDE] h-[80%] w-[100%] flex flex-row justify-center items-center  gap-1 p-[0.1rem] mt-[1rem]">
-        <div class="h-[100%] w-[55%] bg-[#DEDEDE] flex flex-col justify-around items-start">
-          <div class="h-[1.3rem] w-[100%] bg-[#DEDEDE]">
+      <div class="bg-[#eaf2ff] h-[80%] w-[100%] flex flex-row justify-center items-center  gap-1 p-[0.1rem] mt-[1rem]">
+        <div class="h-[100%] w-[55%] bg-[#eaf2ff] flex flex-col justify-around items-start">
+          <div class="h-[1.3rem] w-[100%] bg-[#eaf2ff]">
             <div class="future-info shadow-box h-[100%] w-[18rem] bg-white rounded-2xl px-[0.8rem] flex items-center"><span class="max-w-[30rem]">more features coming soon—stay tuned!</span></div>
           </div>
-          <div class="main-text h-[10rem] w-[100%] bg-[#DEDEDE] text-[3.7rem] transform scale-y-[0.80] flex items-center"><span>unlock leetcode<br>insights with leetx</span></div>
-          <div class="h-[4rem] w-[100%] bg-[#DEDEDE] flex items-start justify-start">
+          <div class="main-text h-[10rem] w-[100%] bg-[#eaf2ff] text-[3.7rem] transform scale-y-[0.80] flex items-center"><span>unlock leetcode<br>insights with leetx</span></div>
+          <div class="h-[4rem] w-[100%] bg-[#eaf2ff] flex items-start justify-start">
             <span id="content">visualize leetcode progress with AI insights, unlocking personalized stats and boosting your coding journey.</span>
           </div>
-          <div class="h-[3rem] w-[100%] bg-[#DEDEDE] flex gap-[0.8rem] items-center">
+          <div class="h-[3rem] w-[100%] bg-[#eaf2ff] flex gap-[0.8rem] items-center">
             <input id="username" placeholder="Username" type="text" class="h-[2rem] rounded-lg w-[16rem] px-[0.6rem] bg-[#DEDEDE]">
             <button id="button" class="search h-[2rem] rounded-lg w-[6rem] text-[0.9rem] px-[0.5rem] bg-black text-white">search</button>
           </div>
-          <div class="user h-[17rem] w-[100%] bg-[#DEDEDE] flex justify-start items-center gap-3">
+          <div class="user h-[17rem] w-[100%] bg-[#eaf2ff] flex justify-start items-center gap-3">
             <div class="box1 h-[10rem] w-[10rem] bg-transparent bg-opacity-10 backdrop-blur-xl rounded-tl-lg rounded-br-2xl  flex flex-col justify-around">
               <video src="/leetx/assets/box1video-Bv-RzhHE.mp4" autoplay muted loop class="h-[100%] w-[100%] object-cover rounded-tl-lg rounded-br-2xl opacity-50 " loading="lazy"></video>
             </div>
@@ -75,13 +82,14 @@
             </div>
           </div>
         </div>
-        <div class="canvas h-[100%] w-[45%] bg-[#e0e0e0] rounded-2xl rounded-tr-2xl overflow-hidden ">
+        <div class="canvas h-[100%] w-[45%] bg-[#eaf2ff] rounded-2xl rounded-tr-2xl overflow-hidden ">
           <canvas id="canvas" class=" w-[100%]"></canvas>
         </div>
       </div>
     </div>
 
-    <div class="relative overflow-hidden main2 bg-[#DEDEDE] h-[33rem] w-m-[100vw] mx-auto p-[2rem] flex justify-center mt-[3rem] items-center gap-2">
+    <!-- home page 2nd block -->
+    <div class="relative overflow-hidden main2 bg-[#eaf2ff] h-[65vh] w-m-[100vw] mx-auto p-[4rem] flex justify-center mt-[3rem] items-center gap-2">
       <div class="a h-[19rem] w-[20rem] bg-[#d1d1d1] border border-[#DEDEDE] border-[0.19rem] rounded-xl flex flex-col p-[0.6rem] justify-between items-start">
         <div class="h-[5rem] w-[100%] p-[0.2rem] px-[0.4rem] flex items-center gap-2">
           <img id="profilepic" src="/leetx/assets/coding-Cf-2YNhZ.png" alt="avtar" class="h-[3rem] bg-[#DEDEDE] rounded-3xl w-[3rem] object-cover">
@@ -99,19 +107,19 @@
       <div id="leetcode-heatmap" class="b h-[17rem] w-[50rem] bg-[#d1d1d1] border border-[#DEDEDE] border-[0.3rem] rounded-xl"></div>
     </div>
 
-    <!-- 3rd item -->   
-    <div class="overflow-hidden relative h-[111 rem] bg-[#DEDEDE]">
-      <div class="h-[17rem] w-screen bg-[#DEDEDE] flex justify-center items-center mt-[4rem]">
-        <div class="h-[17rem] w-[60rem] bg-[#DEDEDE] flex justify-start items-center pl-[6rem]">
-        <span class="tagline text-[5rem]">Designed to <br> transform your <br>progress into insights.</span>
+    <!-- 3rd block -->   
+    <div class="overflow-hidden relative bg-[#eaf2ff]">
+      <div class="h-[17rem] w-[100vw] bg-[#eaf2ff] flex justify-center items-center my-[2rem]">
+        <div class="h-[100%] max-w-[60rem] bg-[#eaf2ff] flex justify-center items-center">
+          <span class="tagline text-[5rem]">Designed to <br> transform your <br>progress into <span id="insights">insights.</span></span>
         </div>
       </div>
 
       <div class="cards relative h-[47rem] p-[1.6rem] px-[8rem] gap-3 flex flex-col justify-start items-center ">
         <div id="as" class="sticky h-[25rem] rounded-3xl w-[100%] top-[1rem] bg-[#1D2434] overflow-hidden  flex flex-col gap-2 justify-center items-center px-[2rem]">
           <video id="cardvid1" loop autoplay muted src="/leetx/assets/cardvid1-k-f2pLAq.mp4" class="absolute top-[0] left-[0] z-[-1] card1 h-[100%] w-[100%] object-cover rounded3xl" loading="lazy"></video>
-              <span id="last-submission" class="x h-[3rem] px-[2rem] bg-transparent backdrop-blur-sm rounded-2xl bg-white/10 flex justify-center items-center bg-red-500">Last Five Accepted Submission</span>
-              <table id="last-submission-table" class="w-[100%] bg-transparent backdrop-blur-sm rounded-2xl  bg-[#DEDEDE]/10 flex flex-col gap-6">
+              <span id="last-submission" class="h-[3rem] px-[2rem] bg-transparent backdrop-blur-sm rounded-2xl bg-white/10 flex justify-center items-center">Last Five Accepted Submission</span>
+              <table id="last-submission-table" class="bg-transparent backdrop-blur-sm rounded-2xl  bg-[#DEDEDE]/10 flex flex-col gap-6">
                 <tr class="w-[100%] h-[2rem]">
                   <th class="w-[2rem] text-left px-2">#</th>
                   <th class="w-[40%] text-left px-2">Title</th>
@@ -164,7 +172,7 @@
         </div>
         <div id="ah" class="absolute overflow-hidden flex rounded-3xl top-[29.2rem] h-[27rem] w-[79%] my- [1.6rem] bg-white">
           <div class="left-col h-[100%] w-[50%] p-[2rem] flex flex-col justify-center gap-3 items-start">
-            <span class="badges w-[100%]">Badges :  <span id="badge-count" class="text-[1.3rem] text-[#c85a01]"></span></span>
+            <span class="badges w-[100%]">Badges : <span id="badge-count" class="text-[1.3rem] text-[#c85a01]"></span></span>
             <div class="badges-container h-[10rem] flex p-[0.5rem] justify-around items-center gap-4 w-[100%]">
               <div class="badge1 flex flex-col justify-center items-center gap-1 ">
                 <img id="b1-img" src="/leetx/assets/cancel-T7EEwoVT.png" alt="Badge 1" class="h-[3.4rem] w-[3.4rem] object-cover ">
@@ -183,26 +191,27 @@
               </div>
             </div>
           </div>
-          <div class="right-col h-[100%] w-[50%]"><video id="cardvid1" src="/leetx/assets/cardvid2-D1nMAjRs.mp4" autoplay loop muted class="card1 h-[100%] w-[100%] object-cover" loading="lazy"></video></div>
+          <div class="right-col h-[100%] w-[50%]"><video id="cardvid1" src="/leetx/assets/cardvid2-D1nMAjRs.mp4" autoplay loop muted class="card1 h-[100%] w-[100%] object-cover transform scale-x-[1.02]" loading="lazy"></video></div>
         </div>        
       </div>
-      <div class="relative overflow-hidden h-[120vh] bg-[#DEDEDE] bg-opacity-0 overflow-hidden flex justify-center items-center">
-        <div class="name-animation absolute flex justify-center items-center h-[8rem] w-[40rem] top-1/3 left-1/2 transform -translate-x-1/2 bg-[#DEDEDE]">
+      <div class="relative overflow-hidden h-[120vh] bg-[#eaf2ff] bg-opacity-0 overflow-hidden flex justify-center items-center">
+        <div class="name-animation absolute flex justify-center items-center h-[8rem] w-[40rem] top-1/3 left-1/2 transform -translate-x-1/2 bg-[#eaf2ff]">
           <span class="scale-text text-[4rem]">leetx Analytics Studio</span>
         </div>
       </div>
     </div> 
     
-    <div class="overflow-hidden dark-subpart h-[60vh] w-m-[1240px] mx-auto bg-black p-[2rem] flex flex-col justify-center items-center p-[2rem]">
-      <div class="1st-part h-[30rem] w-[100%] bg-black overflow-hidden flex justify-between items-center gap-3 ">
-        <div class="revolutionary-text content h-[100%] w-[50%] pl-[2rem] flex flex-col justify-center items-center">
-          <span id="revolutionary-text1" class=" h-[4rem] w-[100%] bg-black text-[2rem]">leetx Analytics Studio</span>
-          <span id="revolutionary-text2" class="h-[6rem] w-[100%] bg-black text-[2.44rem]">Revolutionary analytics,
+    <!-- block 4 -->
+    <div class="overflow-hidden dark-subpart h-[29rem] w-m-[1240px] mx-auto bg-[#040313] p-[2rem] flex flex-col justify-center items-center p-[2rem]">
+      <div class="h-[30rem] w-[100%] bg-[#040313] overflow-hidden flex justify-between items-center gap-3 ">
+        <div class="revolutionary-text content h-[100%] w-[50%] flex flex-col justify-center items-start pl-[3rem]">
+          <span id="revolutionary-text1" class=" h-[4rem] max-w-[30rem] bg-[#040313] text-[2rem] text-left">leetx Analytics Studio</span>
+          <span id="revolutionary-text2" class="h-[6rem] max-w-[30rem] bg-[#040313] text-[2.44rem]">Revolutionary analytics,
           interactive coding insights,</span>
-          <span id="revolutionary-text3" class="h-[6rem] w-[100%] bg-black text-[2.44rem]">to elevate skills and empower
+          <span id="revolutionary-text3" class="h-[6rem] max-w-[30rem] bg-[#040313] text-[2.44rem]">to elevate skills and empower
             problem-solving.</span>
         </div>
-        <div class=" relative motion-animation bg-black flex justify-center items-center h-[100%] w-[50%] overflow-hidden z-[99]"><video autoplay loop muted src="/leetx/assets/motion-animation-DlAaivsm.mp4" class="h-[100%]" loading="lazy"></video></div>
+        <div class="relative motion-animation bg-[#040313] mix-blend-lighten flex justify-center items-center h-[100%] w-[50%] overflow-hidden z-[99]"><video autoplay loop muted src="/leetx/assets/motion-animation-Vq4flbU2.mp4" class="h-[100%]" loading="lazy"></video></div>
       </div>
     </div>
 
